@@ -124,9 +124,9 @@ export const update = async (req, res)=>{
     {
         title: req.body.title,
         description: req.body.description,
-        theme: req.body.theme,
+        themes: req.body.themes,
         user: req.userId,
-        imgUrl: req.body.imgUrl,  
+        imageUrl: req.body.imageUrl,  
     });
     res.json({
         success: true,

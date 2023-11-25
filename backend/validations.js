@@ -16,5 +16,5 @@ export const itemCreateValidation =[
     body('title', "Enter a valid item title").isLength({min: 2}).isString(),
     body('description', "Invalid description, required min 4 symbols").isLength({min:4}).isString(),
     body('themes', "Invalid theme").isLength({min:3}).isString(),
-    body('imgUrl', "Invalid link on img").optional().isURL(),
+    body('imageUrl', "Invalid link on img").optional().isURL(),
 ];
